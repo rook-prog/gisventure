@@ -1,0 +1,7 @@
+title: GISVENTURE
+theme: minima
+logo: /assets/logo_small.png
+description: GIS tools, stories, and solutions by Srijith Balan
+markdown: kramdown
+plugins:
+  - jekyll-feed
