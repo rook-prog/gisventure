@@ -1,7 +1,43 @@
+# ───────────────────────────
+#  Site identity
+# ───────────────────────────
 title: GISVENTURE
-theme: minima
-logo: /assets/logo_small.png
 description: GIS tools, stories, and solutions by Srijith Balan
+logo: /assets/logo_small.png          # shown by minima
+url: "https://rook-prog.github.io"    # ← no trailing slash
+baseurl: "/gisventure"                # ← repo name
+
+# ───────────────────────────
+#  Theme & plugins
+# ───────────────────────────
+theme: minima
 markdown: kramdown
+
 plugins:
-  - jekyll-feed
+  - jekyll-feed          # RSS
+  - jekyll-seo-tag       # <meta> + OpenGraph
+  # - jekyll-sitemap     # (optional) XML sitemap
+
+# ───────────────────────────
+#  Navigation (custom loop)
+#   → add  {% include nav.html %}  in your header
+# ───────────────────────────
+nav:
+  - title: Home
+    url: /
+  - title: Tools
+    url: /tools
+  - title: About
+    url: /about
+
+# ───────────────────────────
+#  Author / social for SEO
+# ───────────────────────────
+author:
+  name: Srijith Balan
+  email: you@example.com
+
+social:
+  github: rook-prog
+  linkedin: srijith-balan
+  twitter: gisventure
